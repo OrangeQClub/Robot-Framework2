@@ -7,7 +7,7 @@ Library           Selenium2Library
 Resource          LoginUI.txt
 
 *** Variables ***
-${BROWSER}        firefox
+${BROWSER}        phantomjs
 
 *** Test Cases ***
 loginTestCases
