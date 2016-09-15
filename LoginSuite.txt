@@ -5,8 +5,6 @@ Metadata          Executed at    %{COMPUTERNAME}
 Metadata          Executed By    %{USERNAME}
 Library           Selenium2Library
 Resource          LoginUI.txt
-Resource          readFromFile.py
-Library           ExcelUtility
 
 *** Variables ***
 ${BROWSER}        firefox
