@@ -7,11 +7,11 @@ Library           Selenium2Library
 Resource          LoginUI.txt
 
 *** Variables ***
-${BROWSER}        phantomjs
+${BROWSER}        firefox
 
 *** Test Cases ***
 loginTestCases
-    [Tags]    login
+    [Tags]    git
     Open Browser and Maxmize Window
     Login
 
@@ -22,8 +22,6 @@ Open Browser and Maxmize Window
 
 Login
     Wait Until Element Is Visible    ${Login Button}    30s
-    ${Username}    Read Cell Value    accounts.xlsx    account    A    2
-    Input Text    ${Username ID}    ${Username}
-    ${password}    Read Cell Value    accounts.xlsx    account    B    2
-    Input Text    ${Password ID}    ${password}
+    Input Text    ${Username ID}    student1
+    Input Text    ${Password ID}    Testing1
     Click Button    ${Login Button}
